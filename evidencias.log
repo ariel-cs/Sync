@@ -720,3 +720,69 @@ rm -f sync_car.o sync_car-runner.o sync_car
 [1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make clean./sync_car [7Pmake[2P./sync_car [7Pmake clean./sync_car [4Pecho $?./sync_car [7Pmake clean[K clean[K clean[K cleancat -A Makefilemake[K clean[K[11@cat -A Makefil[Cmake[K clean[6Pexityay -S unityhubexit[K
 [?2004l
 exit
+Script started on 2026-11-04 20:04:22-03:00 [COMMAND="bash /tmp/append_evidence.sh" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="119" LINES="14"]
+2026-11-04 20:04:22 -03
+ariel
+/home/ariel/Documents/Code/IFSW/Sync
++ make clean
+rm -f sync_car.o sync_car-runner.o sync_car
++ make
+gcc -Wall -Wextra -g -std=gnu11 -pthread -c sync_car.c -o sync_car.o
+gcc -Wall -Wextra -g -std=gnu11 -pthread -c sync_car-runner.c -o sync_car-runner.o
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+gcc -Wall -Wextra -g -std=gnu11 -pthread sync_car.o sync_car-runner.o -o sync_car
++ ./sync_car
+car entering station with 7 free seats
+car departed station with 7 new passenger(s) (expected 7)
+car entering station with 21 free seats
+car departed station with 21 new passenger(s) (expected 21)
+car entering station with 24 free seats
+car departed station with 24 new passenger(s) (expected 24)
+car entering station with 30 free seats
+car departed station with 30 new passenger(s) (expected 30)
+car entering station with 35 free seats
+car departed station with 18 new passenger(s) (expected 18)
+Looks good!
++ echo EXIT_SYNC_CAR=0
+EXIT_SYNC_CAR=0
++ set +x
++ gcc -Wall -Wextra -pthread -std=gnu11 -I. /tmp/test_edge_invalid.c sync_car.c -o /tmp/test_edge_invalid
++ timeout 10 /tmp/test_edge_invalid
+apos 0 assentos: passageiro_retornou=0 (esperado 0)
+erro: count inválido
+apos count=-1: passageiro_retornou=0 (esperado 0)
+apos 1 assento: passageiro_retornou=1 (esperado 1)
++ echo EXIT_TESTE_INVALIDO=0
+EXIT_TESTE_INVALIDO=0
++ set +x
+=== pthread usadas ===
+      1 pthread_cond_broadcast
+      2 pthread_cond_init
+      1 pthread_cond_signal
+      2 pthread_cond_wait
+      1 pthread_mutex_init
+      3 pthread_mutex_lock
+      4 pthread_mutex_unlock
+=== primitivas proibidas ===
+nenhuma primitiva proibida encontrada
+=== estresse GCC 200 ===
+GCC 200/200 execucoes OK
+=== estresse Clang 100 ===
+[1msync_car-runner.c:54:24: [0m[0;1;35mwarning: [0m[1munused parameter 'foo' [-Wunused-parameter][0m
+   54 | [0;34mvoid[0m alarm_handler([0;34mint[0m foo)[0m
+      | [0;1;32m                       ^
+[0m1 warning generated.
+Clang 100/100 execucoes OK
+=== estresse GCC -O2 100 ===
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+GCC -O2 100/100 execucoes OK
+rm -f sync_car.o sync_car-runner.o sync_car
+STRESS_OK
+
+Script done on 2026-11-04 20:06:21-03:00 [COMMAND_EXIT_CODE="0"]
