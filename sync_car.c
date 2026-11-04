@@ -1,8 +1,16 @@
 #include <pthread.h>
-#include <time.h>
+#include <sched.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include "sync_car.h"
 
 void station_init(struct station *station){
+
+    if(station == NULL){
+        fprintf(stderr, "erro: station está vazia\n");
+        exit(1);
+    }
+
     pthread_mutex_init(&station->lock, NULL);
     pthread_cond_init(&station->car_arrived, NULL);
     pthread_cond_init(&station->passager_boarded, NULL);
@@ -14,6 +22,11 @@ void station_init(struct station *station){
 }
 
 void station_load_car(struct station *station, int count){
+
+    if(station == NULL){
+        return;
+    }
+
     pthread_mutex_lock(&station->lock);
 
     station->seats_taken = 0;
@@ -37,6 +50,15 @@ void station_load_car(struct station *station, int count){
 }
 
 void station_wait_for_car(struct station *station){
+
+    if(station == NULL){
+        return;
+    }
+
+    if(station == NULL){
+        return;
+    }
+
     pthread_mutex_lock(&station->lock);
 
     station->waiting++;
@@ -52,6 +74,11 @@ void station_wait_for_car(struct station *station){
 }
 
 void station_on_board(struct station *station){
+
+    if(station == NULL){
+        return;
+    }
+
     pthread_mutex_lock(&station->lock);
 
     station->boarded++;
