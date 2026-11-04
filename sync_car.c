@@ -1,8 +1,16 @@
 #include <pthread.h>
+#include <time.h>
 #include "sync_car.h"
 
 void station_init(struct station *station){
+    pthread_mutex_init(&station->lock, NULL);
+    pthread_cond_init(&station->car_arrived, NULL);
+    pthread_cond_init(&station->passager_boarded, NULL);
 
+    station->waiting = 0;
+    station->capacity = 0;
+    station->seats_taken = 0;
+    station->boarded = 0;
 }
 
 void station_load_car(struct station *station, int count){
