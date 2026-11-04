@@ -1,0 +1,722 @@
+Script started on 2026-11-03 22:26:29-03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="119" LINES="14"]
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m exit
+[?2004l
+exit
+
+Script done on 2026-11-03 22:28:17-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-11-03 22:29:35-03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="119" LINES="14"]
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make clean
+[?2004l
+Makefile:9: *** missing separator.  Stop.
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m✗[0m make
+[?2004l
+Makefile:9: *** missing separator.  Stop.
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m✗[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m✗[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m✗[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m✗[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m✗[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m✗[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m✗[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m✗[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m✗[0m V[K[7mcat -A Makefile[27mcat -A Makefile
+[?2004l
+CC  =   gcc$
+CFLAGS  =   -Wall   -Wextra -g  -std=gnu11  -pthread$
+TARGET  =   sync_car$
+OBJS    =   sync_car.o  sync_car-runner.o$
+$
+all:    $(TARGET)$
+$
+$(TARGET):  $(OBJS)$
+    $(CC)   $(CFLAGS)   $(OBJS) -o  $@$
+$
+sync_car.o: sync_car.c  sync_car.h$
+    $(CC)   $(CFLAGS)   -c  $<  -o  $@$
+$
+sync_car-runner.o:  sync_car-runner.c   sync_car.h$
+    $(CC)   $(CFLAGS)   -c  $<  -o  $@$
+$
+clean:$
+    rm  -f  $(OBJS) $(TARGET)$
+$
+.PHONY: all clean$
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make clean
+[?2004l
+rm -f sync_car.o sync_car-runner.o sync_car
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make
+[?2004l
+gcc -Wall -Wextra -g -std=gnu11 -pthread -c sync_car.c -o sync_car.o
+[01m[Ksync_car.c:[m[K In function ‘[01m[Kstation_init[m[K’:
+[01m[Ksync_car.c:4:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstation[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+    4 | void station_init([01;35m[Kstruct station *station[m[K){
+      |                   [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[Ksync_car.c:[m[K In function ‘[01m[Kstation_load_car[m[K’:
+[01m[Ksync_car.c:8:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstation[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+    8 | void station_load_car([01;35m[Kstruct station *station[m[K, int count){
+      |                       [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[Ksync_car.c:8:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcount[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+    8 | void station_load_car(struct station *station, [01;35m[Kint count[m[K){
+      |                                                [01;35m[K~~~~^~~~~[m[K
+[01m[Ksync_car.c:[m[K In function ‘[01m[Kstation_wait_for_car[m[K’:
+[01m[Ksync_car.c:12:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstation[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   12 | void station_wait_for_car([01;35m[Kstruct station *station[m[K){
+      |                           [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[Ksync_car.c:[m[K In function ‘[01m[Kstation_on_board[m[K’:
+[01m[Ksync_car.c:16:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstation[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   16 | void station_on_board([01;35m[Kstruct station *station[m[K){
+      |                       [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~[m[K
+gcc -Wall -Wextra -g -std=gnu11 -pthread -c sync_car-runner.c -o sync_car-runner.o
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+gcc -Wall -Wextra -g -std=gnu11 -pthread sync_car.o sync_car-runner.o -o sync_car
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make
+[?2004l
+make: Nothing to be done for 'all'.
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make clean
+[?2004l
+rm -f sync_car.o sync_car-runner.o sync_car
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make
+[?2004l
+gcc -Wall -Wextra -g -std=gnu11 -pthread -c sync_car.c -o sync_car.o
+gcc -Wall -Wextra -g -std=gnu11 -pthread -c sync_car-runner.c -o sync_car-runner.o
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+gcc -Wall -Wextra -g -std=gnu11 -pthread sync_car.o sync_car-runner.o -o sync_car
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make clean
+[?2004l
+rm -f sync_car.o sync_car-runner.o sync_car
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make
+[?2004l
+gcc -Wall -Wextra -g -std=gnu11 -pthread -c sync_car.c -o sync_car.o
+gcc -Wall -Wextra -g -std=gnu11 -pthread -c sync_car-runner.c -o sync_car-runner.o
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+gcc -Wall -Wextra -g -std=gnu11 -pthread sync_car.o sync_car-runner.o -o sync_car
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make clean
+[?2004l
+rm -f sync_car.o sync_car-runner.o sync_car
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make
+[?2004l
+gcc -Wall -Wextra -g -std=gnu11 -pthread -c sync_car.c -o sync_car.o
+gcc -Wall -Wextra -g -std=gnu11 -pthread -c sync_car-runner.c -o sync_car-runner.o
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+gcc -Wall -Wextra -g -std=gnu11 -pthread sync_car.o sync_car-runner.o -o sync_car
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync[C[K[K[Kync_car
+[?2004l
+car entering station with 42 free seats
+car departed station with 42 new passenger(s) (expected 42)
+car entering station with 13 free seats
+car departed station with 13 new passenger(s) (expected 13)
+car entering station with 38 free seats
+car departed station with 38 new passenger(s) (expected 38)
+car entering station with 11 free seats
+car departed station with 7 new passenger(s) (expected 7)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m echo$ $[C?
+[?2004l
+0
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m echo $?./sync_car
+[?2004l
+car entering station with 34 free seats
+car departed station with 34 new passenger(s) (expected 34)
+car entering station with 27 free seats
+car departed station with 27 new passenger(s) (expected 27)
+car entering station with 47 free seats
+car departed station with 39 new passenger(s) (expected 39)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car [4Pecho $?./sync_car
+[?2004l
+car entering station with 47 free seats
+car departed station with 47 new passenger(s) (expected 47)
+car entering station with 23 free seats
+car departed station with 23 new passenger(s) (expected 23)
+car entering station with 21 free seats
+car departed station with 21 new passenger(s) (expected 21)
+car entering station with 10 free seats
+car departed station with 9 new passenger(s) (expected 9)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 29 free seats
+car departed station with 29 new passenger(s) (expected 29)
+car entering station with 29 free seats
+car departed station with 29 new passenger(s) (expected 29)
+car entering station with 45 free seats
+car departed station with 42 new passenger(s) (expected 42)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 13 free seats
+car departed station with 13 new passenger(s) (expected 13)
+car entering station with 24 free seats
+car departed station with 24 new passenger(s) (expected 24)
+car entering station with 14 free seats
+car departed station with 14 new passenger(s) (expected 14)
+car entering station with 31 free seats
+car departed station with 31 new passenger(s) (expected 31)
+car entering station with 26 free seats
+car departed station with 18 new passenger(s) (expected 18)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 2 free seats
+car departed station with 2 new passenger(s) (expected 2)
+car entering station with 41 free seats
+car departed station with 41 new passenger(s) (expected 41)
+car entering station with 15 free seats
+car departed station with 15 new passenger(s) (expected 15)
+car entering station with 18 free seats
+car departed station with 18 new passenger(s) (expected 18)
+car entering station with 13 free seats
+car departed station with 13 new passenger(s) (expected 13)
+car entering station with 44 free seats
+car departed station with 11 new passenger(s) (expected 11)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 19 free seats
+car departed station with 19 new passenger(s) (expected 19)
+car entering station with 43 free seats
+car departed station with 43 new passenger(s) (expected 43)
+car entering station with 36 free seats
+car departed station with 36 new passenger(s) (expected 36)
+car entering station with 34 free seats
+car departed station with 2 new passenger(s) (expected 2)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 29 free seats
+car departed station with 29 new passenger(s) (expected 29)
+car entering station with 2 free seats
+car departed station with 2 new passenger(s) (expected 2)
+car entering station with 13 free seats
+car departed station with 13 new passenger(s) (expected 13)
+car entering station with 29 free seats
+car departed station with 29 new passenger(s) (expected 29)
+car entering station with 21 free seats
+car departed station with 21 new passenger(s) (expected 21)
+car entering station with 18 free seats
+car departed station with 6 new passenger(s) (expected 6)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m makw[Ke cel[K[Klen[Kan
+[?2004l
+rm -f sync_car.o sync_car-runner.o sync_car
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m? [1m❯[0m make clean
+[?2004l
+rm -f sync_car.o sync_car-runner.o sync_car
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make clean./sync_car [K[K[K[K[K[K[K[K[K[K[Kmake
+[?2004l
+gcc -Wall -Wextra -g -std=gnu11 -pthread -c sync_car.c -o sync_car.o
+gcc -Wall -Wextra -g -std=gnu11 -pthread -c sync_car-runner.c -o sync_car-runner.o
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+gcc -Wall -Wextra -g -std=gnu11 -pthread sync_car.o sync_car-runner.o -o sync_car
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make clean./sync_car
+[?2004l
+car entering station with 42 free seats
+car departed station with 42 new passenger(s) (expected 42)
+car entering station with 30 free seats
+car departed station with 30 new passenger(s) (expected 30)
+car entering station with 16 free seats
+car departed station with 16 new passenger(s) (expected 16)
+car entering station with 24 free seats
+car departed station with 12 new passenger(s) (expected 12)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 2 free seats
+car departed station with 2 new passenger(s) (expected 2)
+car entering station with 29 free seats
+car departed station with 29 new passenger(s) (expected 29)
+car entering station with 40 free seats
+car departed station with 40 new passenger(s) (expected 40)
+car entering station with 17 free seats
+car departed station with 17 new passenger(s) (expected 17)
+car entering station with 29 free seats
+car departed station with 12 new passenger(s) (expected 12)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 25 free seats
+car departed station with 25 new passenger(s) (expected 25)
+car entering station with 22 free seats
+car departed station with 22 new passenger(s) (expected 22)
+car entering station with 1 free seats
+car departed station with 1 new passenger(s) (expected 1)
+car entering station with 19 free seats
+car departed station with 19 new passenger(s) (expected 19)
+car entering station with 45 free seats
+car departed station with 33 new passenger(s) (expected 33)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 31 free seats
+car departed station with 31 new passenger(s) (expected 31)
+car entering station with 4 free seats
+car departed station with 4 new passenger(s) (expected 4)
+car entering station with 4 free seats
+car departed station with 4 new passenger(s) (expected 4)
+car entering station with 6 free seats
+car departed station with 6 new passenger(s) (expected 6)
+car entering station with 24 free seats
+car departed station with 24 new passenger(s) (expected 24)
+car entering station with 40 free seats
+car departed station with 31 new passenger(s) (expected 31)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 6 free seats
+car departed station with 6 new passenger(s) (expected 6)
+car entering station with 29 free seats
+car departed station with 29 new passenger(s) (expected 29)
+car entering station with 22 free seats
+car departed station with 22 new passenger(s) (expected 22)
+car entering station with 23 free seats
+car departed station with 23 new passenger(s) (expected 23)
+car entering station with 14 free seats
+car departed station with 14 new passenger(s) (expected 14)
+car entering station with 27 free seats
+car departed station with 6 new passenger(s) (expected 6)
+Looks good!
+^[[A]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 20 free seats
+car departed station with 20 new passenger(s) (expected 20)
+car entering station with 32 free seats
+car departed station with 32 new passenger(s) (expected 32)
+car entering station with 18 free seats
+car departed station with 18 new passenger(s) (expected 18)
+car entering station with 12 free seats
+car departed station with 12 new passenger(s) (expected 12)
+car entering station with 47 free seats
+car departed station with 18 new passenger(s) (expected 18)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make clean
+[?2004l
+rm -f sync_car.o sync_car-runner.o sync_car
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make clean./sync_car [1Pmake clean[K[K[K[K[K[K
+[?2004l
+gcc -Wall -Wextra -g -std=gnu11 -pthread -c sync_car.c -o sync_car.o
+gcc -Wall -Wextra -g -std=gnu11 -pthread -c sync_car-runner.c -o sync_car-runner.o
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+gcc -Wall -Wextra -g -std=gnu11 -pthread sync_car.o sync_car-runner.o -o sync_car
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make clean[K[K[K[K[K[K[K[K[K[K./sync_car 
+[?2004l
+car entering station with 31 free seats
+car departed station with 31 new passenger(s) (expected 31)
+car entering station with 27 free seats
+car departed station with 27 new passenger(s) (expected 27)
+car entering station with 25 free seats
+car departed station with 25 new passenger(s) (expected 25)
+car entering station with 48 free seats
+car departed station with 17 new passenger(s) (expected 17)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 33 free seats
+car departed station with 33 new passenger(s) (expected 33)
+car entering station with 26 free seats
+car departed station with 26 new passenger(s) (expected 26)
+car entering station with 12 free seats
+car departed station with 12 new passenger(s) (expected 12)
+car entering station with 9 free seats
+car departed station with 9 new passenger(s) (expected 9)
+car entering station with 3 free seats
+car departed station with 3 new passenger(s) (expected 3)
+car entering station with 9 free seats
+car departed station with 9 new passenger(s) (expected 9)
+car entering station with 42 free seats
+car departed station with 8 new passenger(s) (expected 8)
+Looks good!
+^[[A]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 9 free seats
+car departed station with 9 new passenger(s) (expected 9)
+car entering station with 33 free seats
+car departed station with 33 new passenger(s) (expected 33)
+car entering station with 8 free seats
+car departed station with 8 new passenger(s) (expected 8)
+car entering station with 49 free seats
+car departed station with 49 new passenger(s) (expected 49)
+car entering station with 38 free seats
+car departed station with 1 new passenger(s) (expected 1)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 9 free seats
+car departed station with 9 new passenger(s) (expected 9)
+car entering station with 40 free seats
+car departed station with 40 new passenger(s) (expected 40)
+car entering station with 6 free seats
+car departed station with 6 new passenger(s) (expected 6)
+car entering station with 47 free seats
+car departed station with 45 new passenger(s) (expected 45)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 4 free seats
+car departed station with 4 new passenger(s) (expected 4)
+car entering station with 21 free seats
+car departed station with 21 new passenger(s) (expected 21)
+car entering station with 37 free seats
+car departed station with 37 new passenger(s) (expected 37)
+car entering station with 6 free seats
+car departed station with 6 new passenger(s) (expected 6)
+car entering station with 31 free seats
+car departed station with 31 new passenger(s) (expected 31)
+car entering station with 9 free seats
+car departed station with 1 new passenger(s) (expected 1)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 23 free seats
+car departed station with 23 new passenger(s) (expected 23)
+car entering station with 28 free seats
+car departed station with 28 new passenger(s) (expected 28)
+car entering station with 15 free seats
+car departed station with 15 new passenger(s) (expected 15)
+car entering station with 19 free seats
+car departed station with 19 new passenger(s) (expected 19)
+car entering station with 42 free seats
+car departed station with 15 new passenger(s) (expected 15)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 12 free seats
+car departed station with 12 new passenger(s) (expected 12)
+car entering station with 4 free seats
+car departed station with 4 new passenger(s) (expected 4)
+car entering station with 4 free seats
+car departed station with 4 new passenger(s) (expected 4)
+car entering station with 43 free seats
+car departed station with 43 new passenger(s) (expected 43)
+car entering station with 47 free seats
+car departed station with 37 new passenger(s) (expected 37)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m ./sync_car
+[?2004l
+car entering station with 36 free seats
+car departed station with 36 new passenger(s) (expected 36)
+car entering station with 46 free seats
+car departed station with 46 new passenger(s) (expected 46)
+car entering station with 13 free seats
+car departed station with 13 new passenger(s) (expected 13)
+car entering station with 20 free seats
+car departed station with 5 new passenger(s) (expected 5)
+Looks good!
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m a[Kmake clean
+[?2004l
+rm -f sync_car.o sync_car-runner.o sync_car
+]0;ariel@tinkynote:~/Documents/Code/IFSW/Sync[?2004h
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m
+[K
+[1;36mSync[0m [3;36mmain[0m [36m ? [1m❯[0m make clean./sync_car [7Pmake[2P./sync_car [7Pmake clean./sync_car [4Pecho $?./sync_car [7Pmake clean[K clean[K clean[K cleancat -A Makefilemake[K clean[K[11@cat -A Makefil[Cmake[K clean[6Pexityay -S unityhubexit[K
+[?2004l
+exit
